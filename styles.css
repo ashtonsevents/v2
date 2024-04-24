@@ -466,3 +466,18 @@ iframe {
     width: 500px; /* Set a fixed width for the iframes */
     height: 400px; /* Set a fixed height for the iframes */
 }
+
+/* Add your CSS styles here */
+.post {
+    position: relative;
+}
+
+.expand-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    cursor: pointer;
+}

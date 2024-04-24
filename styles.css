@@ -372,7 +372,7 @@ header {
 .transparentbox {
     background-color: #0d485b;
     bottom: 0;
-    height: 200px;
+    height: 0px;
     width: 100%;
 }
 
@@ -447,3 +447,22 @@ video {
 }
 
 /*------- LINKEDIN */
+.center-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 70vh; /* Full viewport height */
+}
+
+.gallery-container {
+    display: flex;
+    flex-direction: row; /* Arrange iframes horizontally */
+    justify-content: center; /* Center iframes horizontally */
+    align-items: center; /* Center iframes vertically */
+}
+
+iframe {
+    margin: 0 10px; /* Adjust spacing between iframes */
+    width: 500px; /* Set a fixed width for the iframes */
+    height: 400px; /* Set a fixed height for the iframes */
+}

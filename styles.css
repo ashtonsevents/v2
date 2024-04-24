@@ -310,21 +310,20 @@ header {
     font-family: "Arimo", sans-serif;
     white-space: nowrap;
     color: #0b292d;
-    font-size: 80%;
 }
 
 .name2 {
     top: 0%;
-    left: 30vh;
-    font-size: 100%;
+    left: 27vh;
     font-weight:500;
 }
 
 
 .position2 {
     top: 4vh;
+    font-size: .8rem;
     font-weight: 400;
-    left: 27vh;
+    left: 19.5vh;
 }
 
 .connect2 {
@@ -348,9 +347,10 @@ header {
 
 .contact-info2 {
     top: 65%;
-    left: 19vh;
+    left: 21vh;
     line-height: 2.5vh;
     font-weight: 400;
+    font-size: .9rem;
 }
 
 .ashtonslogo22 {
@@ -447,6 +447,7 @@ video {
 }
 
 /*------- LINKEDIN */
+/* Common styles for both desktop and mobile */
 .center-container {
     display: flex;
     justify-content: center; /* Center horizontally */
@@ -456,7 +457,7 @@ video {
 
 .gallery-container {
     display: flex;
-    flex-direction: row; /* Arrange iframes horizontally */
+    flex-direction: row; /* Arrange iframes horizontally by default */
     justify-content: center; /* Center iframes horizontally */
     align-items: center; /* Center iframes vertically */
 }
@@ -468,3 +469,20 @@ iframe {
     height: 600px; /* Set a fixed height for the iframes */
 }
 
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .gallery-container {
+        flex-direction: column; /* Stack iframes vertically on mobile */
+    }
+
+    iframe {
+        width: 90%; /* Set a percentage width for better responsiveness */
+        height: auto; /* Allow height to adjust based on content */
+        max-width: 400px; /* Limit maximum width for better readability */
+        margin: 10px auto; /* Adjust margin for better spacing */
+    }
+
+    .gallery-container iframe:first-child {
+        margin-bottom: 10px; /* Add margin below the first iframe for spacing */
+    }
+}

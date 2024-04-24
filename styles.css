@@ -447,28 +447,3 @@ video {
 }
 
 /*------- LINKEDIN */
-
-.center-container {
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: 100vh; /* Full viewport height */
-}
-
-.gallery-container {
-    display: flex;
-    overflow-x: auto; /* Horizontal scrolling */
-    scroll-snap-type: x mandatory; /* Snap scrolling horizontally */
-}
-
-iframe {
-    border-radius: 20px;
-    width: 504px;
-    height: 743px;
-    margin-right: 20px; /* Adjust spacing between iframes */
-    scroll-snap-align: start; /* Snap to the start of each iframe */
-}
-
-iframe:last-child {
-    margin-right: 0; /* Remove margin from the last iframe */
-}

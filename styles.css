@@ -310,20 +310,21 @@ header {
     font-family: "Arimo", sans-serif;
     white-space: nowrap;
     color: #0b292d;
+    font-size: 80%;
 }
 
 .name2 {
     top: 0%;
-    left: 27vh;
+    left: 30vh;
+    font-size: 100%;
     font-weight:500;
 }
 
 
 .position2 {
     top: 4vh;
-    font-size: .8rem;
     font-weight: 400;
-    left: 19.5vh;
+    left: 27vh;
 }
 
 .connect2 {
@@ -347,10 +348,9 @@ header {
 
 .contact-info2 {
     top: 65%;
-    left: 21vh;
+    left: 19vh;
     line-height: 2.5vh;
     font-weight: 400;
-    font-size: .9rem;
 }
 
 .ashtonslogo22 {

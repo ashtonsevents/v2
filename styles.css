@@ -447,42 +447,84 @@ video {
 }
 
 /*------- LINKEDIN */
-/* Common styles for both desktop and mobile */
-.center-container {
+
+.linkedin-container {
+    margin-top: 10vh;
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: 70vh; /* Full viewport height */
+    justify-content: center;
+    margin-bottom: 200vh;
 }
 
-.gallery-container {
+.linkedin-content { 
     display: flex;
-    flex-direction: row; /* Arrange iframes horizontally by default */
-    justify-content: center; /* Center iframes horizontally */
-    align-items: center; /* Center iframes vertically */
+    flex-direction: row;
+    
 }
 
-iframe {
-    border-radius: 20px;
-    margin: 0 10px; /* Adjust spacing between iframes */
-    width: 400px; /* Set a fixed width for the iframes */
-    height: 600px; /* Set a fixed height for the iframes */
+.linkedinpost {
+    position: relative;
+    width: 45vh;
+    border-top: 5vh solid white;
+    border-bottom: 8vh solid white;
+    border-radius: 3vh;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-/* Media query for mobile devices */
-@media (max-width: 768px) {
-    .gallery-container {
-        flex-direction: column; /* Stack iframes vertically on mobile */
-    }
-
-    iframe {
-        width: 90%; /* Set a percentage width for better responsiveness */
-        height: auto; /* Allow height to adjust based on content */
-        max-width: 400px; /* Limit maximum width for better readability */
-        margin: 10px auto; /* Adjust margin for better spacing */
-    }
-
-    .gallery-container iframe:first-child {
-        margin-bottom: 10px; /* Add margin below the first iframe for spacing */
-    }
+.post1:hover {
+    transform: scale(1.05);
 }
+
+
+.linkedinlogo {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center the logo vertically */
+    position: absolute;
+    width: 20%; /* Make sure the logo covers the entire width of the .linkedinpost container */
+    height: auto; /* Make sure the logo covers the entire height of the .linkedinpost container */
+    top: 2%; /* Align the logo to the top */
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    z-index: 1; /* Ensure the logo is above the .linkedinpost image */
+}
+
+.linkedinlogo img {
+    width: 6vh; /* Set the width of the logo */
+    height: auto; /* Maintain aspect ratio */
+    
+}
+
+.post1,
+.post2 {
+    /* Removed :hover pseudo-class */
+    transform: scale(1);
+    margin-right: 3vh;
+    transition: transform 0.2s;
+}
+
+.social-buttons {
+    position: absolute;
+    bottom: 3vh;
+    font-size: 120%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.social-buttons a {
+    margin: 0 30px; /* Adjust margin between buttons */
+    text-decoration: none;
+    color: #0d485b;
+    font-family: "source-sans-pro", sans-serif;
+    cursor: pointer;
+}
+
+.social-buttons :hover {
+    transform: scale(1.05);
+    color: #25bcb9;
+}
+

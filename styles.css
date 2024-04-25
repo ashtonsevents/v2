@@ -67,22 +67,20 @@ header {
     padding: 1vh;
     padding-left: 2vh;
     border-radius: 50vh;
-    width: 17vh;
+    width: 18vh;
     border: .3vh solid #25bcb9;
     cursor: pointer;
     text-wrap: nowrap;
     transition: background-color, transform 0.3s;
-    /*text-decoration: underline;*/
+    margin-bottom: 10px; /* Adjust margin between buttons */
 }
 
 .download:hover {
     background-color: #25bcb9;
-    transform: scale(105%);
+    transform: scale(1.05);
 }
-
-.fa-download {
-    margin-left: 6%;
-    padding-right: 30px;
+.fa-solid {
+    margin-left: 6%; /* Adjust margin between icon and text */
 }
 
 
@@ -314,7 +312,7 @@ header {
 
 .name2 {
     top: 0%;
-    left: 27vh;
+    left: 62%;
     font-weight:500;
 }
 
@@ -323,18 +321,18 @@ header {
     top: 4vh;
     font-size: .8rem;
     font-weight: 400;
-    left: 19.5vh;
+    left: 67%;
 }
 
 .connect2 {
     top: 35%;
-    left: 23.5vh;
+    left: 54%;
     font-weight: 400;
 }
 
 .linkedin2 {
     width: 70%;
-    left: 5vh;
+    left: 27%;
     position: absolute;
     top: 150%;
 }
@@ -347,8 +345,8 @@ header {
 
 .contact-info2 {
     top: 65%;
-    left: 21vh;
-    line-height: 2.5vh;
+    left: 50%;
+    line-height: 147.5%;
     font-weight: 400;
     font-size: .9rem;
 }
@@ -362,11 +360,6 @@ header {
     margin-left: 21.5vh; /* Move image to the right */
 }
 
-.download {
-    width: 23vh;
-    text-wrap: nowrap;
-    flex-wrap: nowrap;
-}
 }
 
 .transparentbox {
@@ -451,18 +444,24 @@ video {
 .linkedin-container {
     margin-top: 10vh;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 200vh;
 }
 
-.linkedin-content { 
+.linkedin-content {
     display: flex;
-    flex-direction: row;
-    
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.post1 {
+    margin: 0 10px; /* Adjust margin between posts */
+    text-align: center; /* Center contents */
+    position: relative; /* Position relative for absolute positioning of logo */
 }
 
 .linkedinpost {
-    position: relative;
     width: 45vh;
     border-top: 5vh solid white;
     border-bottom: 8vh solid white;
@@ -477,23 +476,20 @@ video {
 
 
 .linkedinlogo {
-    display: flex;
-    justify-content: center;
-    align-items: center; /* Center the logo vertically */
-    position: absolute;
-    width: 20%; /* Make sure the logo covers the entire width of the .linkedinpost container */
-    height: auto; /* Make sure the logo covers the entire height of the .linkedinpost container */
-    top: 2%; /* Align the logo to the top */
+    position: absolute; /* Position absolute to place logo at the top */
+    top: 2%;
     left: 50%;
     transform: translateX(-50%);
     cursor: pointer;
-    z-index: 1; /* Ensure the logo is above the .linkedinpost image */
+    z-index: 1; /* Ensure logo is above the post content */
+    width: 25%;
+    max-width: 25%;
 }
 
+
 .linkedinlogo img {
-    width: 6vh; /* Set the width of the logo */
-    height: auto; /* Maintain aspect ratio */
-    
+    width: 6vh;
+    height: auto;
 }
 
 .post1,
@@ -505,22 +501,23 @@ video {
 }
 
 .social-buttons {
-    position: absolute;
-    bottom: 3vh;
-    font-size: 120%;
-    left: 0;
+    bottom: 6vh; /* Adjust bottom position */
+    position: absolute; /* Position absolute to place buttons at the bottom */
+    left: 50%;
+    bottom: 6%;
+    transform: translateX(-50%);
+    z-index: 2; /* Ensure buttons are above the post content */
     width: 100%;
     display: flex;
     justify-content: center;
-   
 }
-
 .social-buttons a {
     margin: 0 30px; /* Adjust margin between buttons */
     text-decoration: none;
     color: #0d485b;
     font-family: "source-sans-pro", sans-serif;
     cursor: pointer;
+    transition: color 0.3s;
 }
 
 .social-buttons :hover {
@@ -528,3 +525,6 @@ video {
     color: #25bcb9;
 }
 
+.post1:hover {
+    transform: scale(1.05);
+}

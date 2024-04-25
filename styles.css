@@ -510,7 +510,6 @@ video {
     width: 100%;
     display: flex;
     justify-content: center;
-    white-space: nowrap;
 }
 .social-buttons a {
     margin: 0 30px; /* Adjust margin between buttons */
@@ -528,4 +527,19 @@ video {
 
 .post1:hover {
     transform: scale(1.05);
+}
+
+@media only screen and (max-width:766px) {
+    .social-buttons {
+        bottom: 6vh; /* Adjust bottom position */
+        position: absolute; /* Position absolute to place buttons at the bottom */
+        left: 50%;
+        bottom: 3%;
+        transform: translateX(-50%);
+        z-index: 2; /* Ensure buttons are above the post content */
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
 }

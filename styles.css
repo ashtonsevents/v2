@@ -510,7 +510,7 @@ video {
     width: 100%;
     display: flex;
     justify-content: center;
-    text-wrap: nowrap;
+    white-space: nowrap;
 }
 .social-buttons a {
     margin: 0 30px; /* Adjust margin between buttons */

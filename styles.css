@@ -23,7 +23,7 @@ body, html {
 
 
 .toplogo {
-    padding-top: 20vh;
+    padding-top: 15vh;
     display: flex; /* Use flexbox */
     justify-content: center; /* Align items horizontally to the center */
     height: auto; /* Set height of container to full viewport height */

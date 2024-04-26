@@ -75,6 +75,11 @@ body, html {
         width: auto; /* Allow the button to expand to fit the content */
         padding: .8vh 3vh; /* Adjust padding for smaller screens */
     }
+
+    .downloadcontainer:hover {
+        background-color: #25bcb9;
+        transform: scale(1.05);
+    }
 }
 
 .fa-solid {

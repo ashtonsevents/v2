@@ -71,7 +71,7 @@ body, html {
 
 /* Responsive adjustments */
 @media screen and (max-width: 767px) {
-    .download {
+    .downloadcontainer {
         width: auto; /* Allow the button to expand to fit the content */
         padding: .8vh 3vh; /* Adjust padding for smaller screens */
     }

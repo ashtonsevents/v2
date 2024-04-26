@@ -72,8 +72,22 @@ body, html {
 /* Responsive adjustments */
 @media screen and (max-width: 767px) {
     .downloadcontainer {
-        width: auto; /* Allow the button to expand to fit the content */
-        padding: .8vh 3vh; /* Adjust padding for smaller screens */
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5vh;
+    padding-bottom: 3vh;
+    border: .3vh solid #25bcb9;
+    border-radius: 50vh;
+    padding: .8vh 3vh; /* Adjust padding for both top/bottom and left/right */
+    min-width: 120px; /* Set a minimum width */
+    max-width: 120px;
+    text-align: center;
+    white-space: nowrap; /* Prevent text wrapping */
+    font-size: 1.3rem;
+    margin: 5vh auto; /* Center horizontally */
+    transition: background-color, transform 0.3s;
     }
 
     .downloadcontainer:hover {

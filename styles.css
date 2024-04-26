@@ -44,22 +44,23 @@ body, html {
     align-items: center;
     padding-top: 5vh;
     padding-bottom: 3vh;
+    border: .3vh solid #25bcb9;
+    border-radius: 50vh;
+    padding: .5vh 3vh; /* Adjust padding for both top/bottom and left/right */
+    min-width: 120px; /* Set a minimum width */
+    max-width: 120px;
+    text-align: center;
+    white-space: nowrap; /* Prevent text wrapping */
+    font-size: 1.3rem;
+    margin: 5vh auto; /* Center horizontally */
 }
 
 .download {
     font-family: "source-sans-pro", sans-serif;
     color: white;
     font-weight: 600;
-    font-size: 1.3rem;
-    text-align: center;
-    padding: 1vh 3vh; /* Adjust padding for both top/bottom and left/right */
-    border-radius: 50vh;
-    min-width: 120px; /* Set a minimum width */
-    border: .3vh solid #25bcb9;
     cursor: pointer;
-    white-space: nowrap; /* Prevent text wrapping */
     transition: background-color, transform 0.3s;
-    margin-bottom: 10px; /* Adjust margin between buttons */
 }
 
 .download:hover {
@@ -71,13 +72,14 @@ body, html {
 @media screen and (max-width: 767px) {
     .download {
         width: auto; /* Allow the button to expand to fit the content */
-        padding: 1vh 3vh; /* Adjust padding for smaller screens */
+        padding: .5vh 3vh; /* Adjust padding for smaller screens */
     }
 }
 
 .fa-solid {
     margin-left: 6%; /* Adjust margin between icon and text */
 }
+
 
 
 .ourteam {

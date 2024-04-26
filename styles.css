@@ -44,7 +44,6 @@ body, html {
     align-items: center;
     padding-top: 5vh;
     padding-bottom: 3vh;
-    text-wrap: nowrap;
 }
 
 .download {
@@ -52,14 +51,13 @@ body, html {
     color: white;
     font-weight: 600;
     font-size: 1.3rem;
-    text-align: left;
-    padding: 1vh;
-    padding-left: 2vh;
+    text-align: center;
+    padding: 1vh 2vh; /* Adjust padding for both top/bottom and left/right */
     border-radius: 50vh;
-    width: 18vh;
+    min-width: 120px; /* Set a minimum width */
     border: .3vh solid #25bcb9;
     cursor: pointer;
-    text-wrap: nowrap;
+    white-space: nowrap; /* Prevent text wrapping */
     transition: background-color, transform 0.3s;
     margin-bottom: 10px; /* Adjust margin between buttons */
 }
@@ -68,6 +66,15 @@ body, html {
     background-color: #25bcb9;
     transform: scale(1.05);
 }
+
+/* Responsive adjustments */
+@media screen and (max-width: 767px) {
+    .download {
+        width: auto; /* Allow the button to expand to fit the content */
+        padding: 1vh 1.5vh; /* Adjust padding for smaller screens */
+    }
+}
+
 .fa-solid {
     margin-left: 6%; /* Adjust margin between icon and text */
 }

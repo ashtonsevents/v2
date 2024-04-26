@@ -475,7 +475,7 @@ video {
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 5vh;
-    margin-bottom: 200vh;
+    margin-bottom: 5vh;
 }
 
 .linkedin-content {
@@ -585,3 +585,22 @@ video {
     margin-top: 5vh;
     font-size: 1.5rem;
 }
+
+/*VIDEO VIRTUAL HUB*/
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70%; /* Ensure the video container doesn't exceed the specified width */
+    margin: 3vh auto;
+    margin-bottom: 5vh; /* Add a gap at the bottom */
+    border: 5px solid white; /* Apply border to the video container */
+}
+
+.video-container video {
+    width: 100%; /* Set the video width to fill its container */
+    height: auto; /* Allow the video to maintain its aspect ratio */
+}
+
+

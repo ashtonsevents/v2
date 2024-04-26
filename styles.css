@@ -52,7 +52,7 @@ body, html {
     font-weight: 600;
     font-size: 1.3rem;
     text-align: center;
-    padding: 1vh 2vh; /* Adjust padding for both top/bottom and left/right */
+    padding: 1vh 3vh; /* Adjust padding for both top/bottom and left/right */
     border-radius: 50vh;
     min-width: 120px; /* Set a minimum width */
     border: .3vh solid #25bcb9;
@@ -71,7 +71,7 @@ body, html {
 @media screen and (max-width: 767px) {
     .download {
         width: auto; /* Allow the button to expand to fit the content */
-        padding: 1vh 1.5vh; /* Adjust padding for smaller screens */
+        padding: 1vh 3vh; /* Adjust padding for smaller screens */
     }
 }
 

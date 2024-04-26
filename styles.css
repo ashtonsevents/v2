@@ -46,24 +46,25 @@ body, html {
     padding-bottom: 3vh;
     border: .3vh solid #25bcb9;
     border-radius: 50vh;
-    padding: .5vh 3vh; /* Adjust padding for both top/bottom and left/right */
+    padding: .8vh 3vh; /* Adjust padding for both top/bottom and left/right */
     min-width: 120px; /* Set a minimum width */
     max-width: 120px;
     text-align: center;
     white-space: nowrap; /* Prevent text wrapping */
     font-size: 1.3rem;
     margin: 5vh auto; /* Center horizontally */
+    transition: background-color, transform 0.3s;
 }
 
 .download {
     font-family: "source-sans-pro", sans-serif;
     color: white;
     font-weight: 600;
+    text-align: center;
     cursor: pointer;
-    transition: background-color, transform 0.3s;
 }
 
-.download:hover {
+.downloadcontainer:hover {
     background-color: #25bcb9;
     transform: scale(1.05);
 }
@@ -72,11 +73,12 @@ body, html {
 @media screen and (max-width: 767px) {
     .download {
         width: auto; /* Allow the button to expand to fit the content */
-        padding: .5vh 3vh; /* Adjust padding for smaller screens */
+        padding: .8vh 3vh; /* Adjust padding for smaller screens */
     }
 }
 
 .fa-solid {
+    text-align: center;
     margin-left: 6%; /* Adjust margin between icon and text */
 }
 

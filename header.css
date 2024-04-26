@@ -1,0 +1,46 @@
+
+
+header {
+    z-index: 1;
+    height: 5vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    background-color: #0b292d;
+    display: flex;
+    justify-content: center; /* Center align the items horizontally */
+    align-items: center; /* Center align the items vertically */
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 0 15px #0b292d;
+    font-family: "source-sans-pro", sans-serif;
+    color: white;
+}
+
+
+
+/* Style for the menu */
+.menu {
+    text-align: center; /* Center align the menu */
+}
+
+.menu ul {
+    list-style: none; /* Remove default list style */
+    padding: 0;
+}
+
+.menu ul li {
+    display: inline-block; /* Display menu items horizontally */
+    margin: 0 10px; /* Add margin between menu items */
+}
+
+.menu ul li a {
+    color: white; /* Set text color */
+    text-decoration: none; /* Remove underline from links */
+    padding: 5px 10px; /* Add padding to links */
+    border-radius: 5px; /* Add border radius to create rounded corners */
+    transition: color 0.2s;
+}
+
+.menu ul li a:hover {
+    color: #25bcb9; /* Change background color on hover */
+}

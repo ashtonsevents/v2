@@ -5,17 +5,6 @@ body, html {
     background-color: #0d485b; /* Blue background */
 }
 
-header {
-    z-index: 1;
-    height: 5vh;
-    padding-bottom: 1vh;
-    background-color: #0b292d;
-    display: flex;
-    position: fixed;
-    width: 100%;
-    box-shadow: 0 0 15px #0b292d;
-    color: white;
-}
 
 .headertitle {
     background-color: #0b292d;
@@ -54,7 +43,7 @@ header {
     justify-content: center;
     align-items: center;
     padding-top: 5vh;
-    padding-bottom: 6vh;
+    padding-bottom: 3vh;
     text-wrap: nowrap;
 }
 
@@ -418,11 +407,20 @@ footer a {
     color: white;
     font-weight: 600;
     font-size: 1.3rem;
-    padding-bottom: 0vh;
-    padding-top: 5vh;
+    padding-bottom: 4vh;
     text-decoration: none;
     transition: color 0.5s ease;
 }
+
+.questions {
+    text-align: center;
+    font-family: "source-sans-pro", sans-serif;
+    color: white;
+    font-weight: 600;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
 
 .hello :link {
     text-decoration: underline;
@@ -446,6 +444,7 @@ video {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 5vh;
     margin-bottom: 200vh;
 }
 
@@ -542,4 +541,13 @@ video {
         justify-content: center;
     }
 
+}
+
+.events {
+    text-align: center;
+    font-family: "source-sans-pro", sans-serif;
+    color: white;
+    font-weight: 600;
+    margin-top: 5vh;
+    font-size: 1.5rem;
 }

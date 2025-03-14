@@ -266,6 +266,7 @@ footer {
     .team-member {
         width: 100%;
         max-width: 300px;
+        height: auto;
     }
 
     .doc-link {

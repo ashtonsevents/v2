@@ -185,7 +185,7 @@ nav ul li a:hover {
     align-items: center;
 }
 
-.team-member .pfp {
+.pfp {
     width: 200px;  /* Adjust to desired size */
     height: 200px; /* Ensures it's a perfect square */
     object-fit: cover; /* Prevents distortion and maintains aspect ratio */

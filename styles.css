@@ -276,6 +276,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out; /* Smooth scaling & blur transition */
 }
 
 /* Ensure the thumbnail is blurred by default */
@@ -299,6 +300,11 @@ nav ul li a:hover {
 }
 
 /* Hover Effects */
+.pdf-thumbnail:hover {
+    filter: blur(0px); /* Unblur the thumbnail */
+    transform: scale(120%);
+}
+
 .pdf-thumbnail:hover .thumbnail-img {
     filter: blur(0px); /* Unblur the thumbnail */
 }

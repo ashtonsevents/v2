@@ -360,6 +360,21 @@ footer {
     }
 }
 
+/* Hover Effects (Only for desktop) */
+@media (min-width: 769px) { /* Applies hover effects only on screens larger than 768px */
+    .pdf-thumbnail:hover {
+        transform: scale(1.2); /* Enlarges smoothly */
+    }
+}
+
+/* Mobile-specific styles (turn off transform only) */
+@media (max-width: 768px) {
+    .pdf-thumbnail {
+        transform: none !important; /* Prevent scaling */
+    }
+}
+
+
 .fade-in {
     opacity: 0;
     transform: translateY(20px);

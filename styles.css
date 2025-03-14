@@ -20,6 +20,11 @@ header {
     z-index: 1000;
 }
 
+header .menu-toggle {
+    margin-left: auto; /* Pushes the toggle to the right */
+    margin-right: 5%; /* Ensures spacing from the right edge */
+}
+
 .content h1 {
     font-weight: 500;
     font-size: 2.5rem;
@@ -85,6 +90,7 @@ nav ul li a:hover {
 
     nav ul.show {
         display: flex;
+        text-align: center;
     }
 
     nav ul li {

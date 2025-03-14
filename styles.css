@@ -374,6 +374,20 @@ footer {
     }
 }
 
+.document-title {
+    margin-top: 8px;
+    font-size: 1rem !important; /* Smaller font size */
+    font-weight: 500; /* Slightly lighter weight */
+    color: #07485B;
+    text-align: center;
+    opacity: 0.8; /* Slightly faded for subtlety */
+}
+
+
+.document-title {
+    font-size: 0.7rem
+}
+
 
 .fade-in {
     opacity: 0;

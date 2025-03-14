@@ -226,19 +226,88 @@ nav ul li a:hover {
     opacity: 0.7;
 }
 
-
 /* DOCUMENTS SECTION */
 #documents {
     background: #eaf4f8;
+    padding: 50px 20px;
 }
 
 .documents-container {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns on desktop */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
     align-items: center;
 }
 
+/* Fix individual grid items */
+.document {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Responsive for tablets */
+@media (max-width: 1024px) {
+    .documents-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 per row */
+    }
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+    .documents-container {
+        grid-template-columns: repeat(1, 1fr); /* 1 per row */
+    }
+}
+
+/* Thumbnail container */
+.pdf-thumbnail {
+    position: relative;
+    width: 100%;
+    max-width: 250px;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Ensure the thumbnail is blurred by default */
+.thumbnail-img {
+    width: 100%;
+    height: auto;
+    filter: blur(5px); /* Initially blurred */
+    transition: filter 0.3s ease;
+}
+
+/* Centering the eye icon */
+.eye-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Moves it exactly to the center */
+    width: 50px; /* Adjust size */
+    z-index: 10; /* Ensures it stays above the blurred image */
+    filter: brightness(0) invert(1) drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5)); /* Makes it white with shadow */
+    transition: opacity 0.3s ease;
+}
+
+/* Hover Effects */
+.pdf-thumbnail:hover .thumbnail-img {
+    filter: blur(0px); /* Unblur the thumbnail */
+}
+
+.pdf-thumbnail:hover .eye-icon {
+    opacity: 0; /* Hide eye icon on hover */
+}
+
+/* Button-style links for downloads (optional) */
 .doc-link {
     text-decoration: none;
     background: #07485B;
@@ -250,11 +319,14 @@ nav ul li a:hover {
     max-width: 400px;
     text-align: center;
     transition: background 0.3s ease;
+    display: block;
+    margin-top: 10px;
 }
 
 .doc-link:hover {
     background: #0ac1bc;
 }
+
 
 /* FOOTER */
 footer {
